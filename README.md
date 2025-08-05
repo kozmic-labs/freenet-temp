@@ -1,7 +1,6 @@
-### freenet-temp
 
 #### Powershell
 
 -
-- `get_freenet_info`: creates a hosts.json for any running `freenet.exe` then shows it's port and if it's a peer or gateway.
+- `get_freenet_info`: creates `hosts.json` for any running `freenet.exe` and shows the port as peer or gateway.
 -
