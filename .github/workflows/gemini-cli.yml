@@ -216,7 +216,7 @@ jobs:
 
       - name: 'Run Gemini'
         id: 'run_gemini'
-        uses: './'
+        uses: 'kozmic-labs/run-gemini-cli@main'
         env:
           GITHUB_TOKEN: '${{ steps.generate_token.outputs.token || secrets.GITHUB_TOKEN }}'
           REPOSITORY: '${{ github.repository }}'
