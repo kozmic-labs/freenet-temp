@@ -1,0 +1,19 @@
+name: Run Gemini CLI Action
+
+on:
+  workflow_dispatch: # Allows manual triggering from the GitHub UI
+
+jobs:
+  run-cli:
+    runs-on: ubuntu-latest # Or your preferred runner environment
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Run Gemini CLI
+      uses: google-gemini/run-gemini-cli@v1 # Use the correct action reference
+      with:
+        command: 'ls -la' # Example command to run
+        # Add any other inputs required by the action, e.g.,
+        # gemini_api_key: ${{ secrets.GEMINI_API_KEY }}
