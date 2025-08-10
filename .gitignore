@@ -1,3 +1,5 @@
 hosts.json
-/web-ui/node_modules/
+
 .gemini/
+.github/
+/web-ui/node_modules/
